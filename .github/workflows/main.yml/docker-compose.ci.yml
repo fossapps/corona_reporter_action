@@ -1,0 +1,10 @@
+version: '3'
+services:
+  app:
+    image: cyberhck/corona_reporter:ci
+    environment:
+      - ASPNETCORE_ENVIRONMENT=ci
+  corona:
+    image: fossapps/corona
+    ports:
+      - 3000:3000
